@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/bem_vindo"
+            style="@style/bem_vindo"
+            android:text="Bem-vindo ao quizz sobre Android!" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/estrela"
+                android:src="@drawable/star" />
+
+            <TextView
+                android:id="@+id/pergunta1"
+                style="@style/estilo_pergunta"
+                android:text="1 -  O nome do ambiente de desenvolvimento integrado (IDE) para desenvolver para a plataforma Android é:" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/campo_resposta"
+            style="@style/estilo_resposta"
+            android:layout_width="wrap_content"
+            android:hint="Resposta" />
+
+        <View style="@style/linha_divisoria" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/estrela"
+                android:src="@drawable/star" />
+
+            <TextView
+                android:id="@+id/pergunta2"
+                style="@style/estilo_pergunta"
+                android:text="2 - A última versão do Android é: " />
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/botao_oreo"
+                style="@style/estilo_resposta"
+                android:text="Android Oreo" />
+
+            <RadioButton
+                android:id="@+id/botao_pie"
+                style="@style/estilo_resposta"
+                android:text="Android Pie" />
+
+            <RadioButton
+                android:id="@+id/botao_nougat"
+                style="@style/estilo_resposta"
+                android:text="Android Nougat" />
+
+        </RadioGroup>
+
+        <View style="@style/linha_divisoria" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/estrela"
+                android:src="@drawable/star" />
+
+            <TextView
+                android:id="@+id/pergunta3"
+                style="@style/estilo_pergunta"
+                android:text="3 - As linguagens utilizadas pelo sistema Android são:" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/botao_C"
+            style="@style/estilo_resposta"
+            android:text="C" />
+
+        <CheckBox
+            android:id="@+id/botao_java"
+            style="@style/estilo_resposta"
+            android:text="Java" />
+
+        <CheckBox
+            android:id="@+id/botao_C2"
+            style="@style/estilo_resposta"
+            android:text="C++" />
+
+        <View style="@style/linha_divisoria" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/estrela"
+                android:src="@drawable/star" />
+
+            <TextView
+                android:id="@+id/pergunta4"
+                style="@style/estilo_pergunta"
+                android:text="4 - A sigla XML significa:" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/botao_extensible"
+                style="@style/estilo_resposta"
+                android:text="Extensible Markup Language" />
+
+            <RadioButton
+                android:id="@+id/botao_extendable"
+                style="@style/estilo_resposta"
+                android:text="Extendable Markup Line" />
+        </RadioGroup>
+
+        <View style="@style/linha_divisoria" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                style="@style/estrela"
+                android:src="@drawable/star" />
+
+            <TextView
+                android:id="@+id/pergunta5"
+                style="@style/estilo_pergunta"
+                android:text="5 - O Android é um sistema operacional baseado em: " />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/botao_linux"
+                style="@style/estilo_resposta"
+                android:text="Linux" />
+
+            <RadioButton
+                android:id="@+id/botao_windows"
+                style="@style/estilo_resposta"
+                android:text="Windows" />
+
+
+            <RadioButton
+                android:id="@+id/botao_ios"
+                style="@style/estilo_resposta"
+                android:text="iOS" />
+        </RadioGroup>
+
+        <View style="@style/linha_divisoria" />
+
+        <Button
+            android:id="@+id/enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="enviarRespostas"
+            android:text="Enviar" />
+
+    </LinearLayout>
+</ScrollView>
